@@ -1,0 +1,25 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualMachines_vm1_name": {
+            "value": "{{vmName}}"
+        },
+        "adminUsername": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/{{subscription}}/resourceGroups/{{keyvaultResourceGroup}}/providers/Microsoft.KeyVault/vaults/{{vaultName}}"
+                },
+            "secretName": "vmUsername"
+            }
+        },
+        "adminPassword": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/{{subscription}}/resourceGroups/{{keyvaultResourceGroup}}/providers/Microsoft.KeyVault/vaults/{{vaultName}}"
+                },
+            "secretName": "vmPassword"
+            }
+        }
+    }
+}

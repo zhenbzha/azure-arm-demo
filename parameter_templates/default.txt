@@ -1,0 +1,2 @@
+keyvaultResourceGroup:zhenzh-databricks-demo
+vaultName:zhenzh-databricks-kv
