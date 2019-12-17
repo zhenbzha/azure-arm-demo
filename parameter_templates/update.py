@@ -11,8 +11,8 @@ key_vals = {}
 files = ["default.txt", "user_input.txt"]
 
 for file in files:
-    with open(file) as default_file:
-        for line in default_file:
+    with open(file) as f:
+        for line in f:
             key, val = line.strip().split(":")
             key_vals.update({key: val})
             
