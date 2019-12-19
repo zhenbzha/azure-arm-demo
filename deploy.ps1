@@ -1,6 +1,6 @@
 $templateFile = "$env:ARTIFACT_DIR\$env:PRIMARY_ARTIFACT_SOURCE_ALIAS\template.json"
 $templateParameterFile = "$env:ARTIFACT_DIR\$env:PRIMARY_ARTIFACT_SOURCE_ALIAS\generated.parameters.json"
-$resourceGroupName = "zhenzh-arm-demo1"
+$resourceGroupName = "zhenzh-arm-demo"
 $location = "West Europe"
 
 Write-Host "Content in directory: $env:ARTIFACT_DIR"
