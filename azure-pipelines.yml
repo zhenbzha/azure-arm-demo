@@ -24,3 +24,8 @@ steps:
   inputs:
     scriptSource: 'filePath'
     scriptPath: 'parameter_templates/update.py'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(System.ArtifactsDirectory)'
+    publishLocation: 'pipeline'
