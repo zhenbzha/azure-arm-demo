@@ -1,5 +1,5 @@
-$templateFile = "$(System.ArtifactsDirectory)/Drop/azure-arm-demo/template.json"
-$templateParameterFile = "$(System.ArtifactsDirectory)/Drop/azure-arm-demo/generated.parameters.json"
+$templateFile = "template.json"
+$templateParameterFile = "generated.parameters.json"
 $resourceGroupName = "zhenzh-arm-demo1"
 $location = "West Europe"
 
