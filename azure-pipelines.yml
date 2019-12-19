@@ -12,3 +12,10 @@ pool:
 steps:
 - script: python -m pip install Jinja2
   displayName: 'Install tools'
+  
+- task: DownloadGitHubRelease@0
+  inputs:
+    connection: 'github.com_zhenbzha'
+    userRepository: 'zhenbzha/azure-arm-demo'
+    defaultVersionType: 'latest'
+    downloadPath: '$(System.ArtifactsDirectory)'
