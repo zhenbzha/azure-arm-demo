@@ -1,5 +1,5 @@
-$templateFile = "$env:ARTIFACT_DIR\$env:PRIMARY_ARTIFACT_SOURCE_ALIAS\template.json"
-$templateParameterFile = "$env:ARTIFACT_DIR\$env:PRIMARY_ARTIFACT_SOURCE_ALIAS\generated.parameters.json"
+$templateFile = "$env:ARTIFACT_DIR\$env:PRIMARY_ARTIFACT_SOURCE_ALIAS\Job\template.json"
+$templateParameterFile = "$env:ARTIFACT_DIR\$env:PRIMARY_ARTIFACT_SOURCE_ALIAS\Job\generated.parameters.json"
 $resourceGroupName = "zhenzh-arm-demo"
 $location = "West Europe"
 
