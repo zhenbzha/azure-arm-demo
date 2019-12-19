@@ -1,14 +1,15 @@
 from jinja2 import Environment, FileSystemLoader
 import json
 
-file_loader = FileSystemLoader(".")
+dir = "parameter_templates"
+file_loader = FileSystemLoader(dir)
 env = Environment(loader=file_loader)
 
 template = env.get_template("original.json")
 
 key_vals = {}
 
-files = ["default.txt", "user_input.txt"]
+files = [f"{dir}/default.txt", f"{dir}/user_input.txt"]
 
 for file in files:
     with open(file) as f:
@@ -18,5 +19,5 @@ for file in files:
             
 output = template.render(key_vals)
 
-with open("../generated.parameters.json", 'w') as f:
+with open("generated.parameters.json", 'w') as f:
     f.write(output)
