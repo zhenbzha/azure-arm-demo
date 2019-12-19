@@ -3,8 +3,6 @@ $templateParameterFile = "$(System.ArtifactsDirectory)/Drop/azure-arm-demo/gener
 $resourceGroupName = "zhenzh-arm-demo1"
 $location = "West Europe"
 
-$(System.ArtifactsDirectory)
-
 New-AzResourceGroup `
     -Name $resourceGroupName `
     -Location $location `
