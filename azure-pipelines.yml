@@ -12,5 +12,5 @@ pool:
 steps:
 - script: |
     python -m pip install --upgrade pip
-    pip install -r -U Jinja2
+    pip install -U Jinja2
   displayName: 'Install dependencies'
