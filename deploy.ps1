@@ -9,9 +9,3 @@ New-AzResourceGroup `
     -Name $resourceGroupName `
     -Location $location `
     -Force
-
-New-AzResourceGroupDeployment `
-    -ResourceGroupName $resourceGroupName `
-    -TemplateFile $templateFile `
-    -TemplateParameterFile $templateParameterFile `
-    -Force
