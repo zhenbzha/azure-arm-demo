@@ -25,6 +25,14 @@ steps:
     scriptSource: 'filePath'
     scriptPath: 'parameter_templates/update.py'
 
+- task: AzurePowerShell@5
+  inputs:
+    ScriptType: 'InlineScript'
+    Inline: |
+      Write-Host "Content in directory: $env:SOURCE_DIR"
+      Get-ChildItem -Path $env:SOURCE_DIR -Depth 4
+    azurePowerShellVersion: 'LatestVersion'
+
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: '$(System.ArtifactsDirectory)'
