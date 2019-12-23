@@ -1,2 +1,3 @@
 .vscode/
 generated.parameters.json
+triggerPipeline.ps1
