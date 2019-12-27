@@ -31,6 +31,7 @@ steps:
     azureSubscription: 'Microsoft Azure Internal Consumption (4591c181-b2c0-4a55-93a9-f759859a214b)'
     ScriptType: 'FilePath'
     ScriptPath: './downloadFromBlob.ps1'
+    ScriptArguments: '$env:SOURCE_DIR'
     azurePowerShellVersion: 'LatestVersion'
 
 - task: PowerShell@2
